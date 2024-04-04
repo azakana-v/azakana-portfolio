@@ -36,7 +36,7 @@
 .imghero-container {
   width: 50%;
   height: 100%;
-  padding-top: 10%;
+  padding-top: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,10 +262,14 @@
 
 @media only screen and (max-width: 500px) {
   .home-content p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .home-content h1 {
-    font-size: 30px;
+    font-size: 22px;
+  }
+
+  .home-content h3 {
+    font-size: 15px;
   }
   .imghero-container {
     width: 300px;
@@ -279,5 +283,11 @@
     width: 240%;
     top: 50px;
     left: -250px;
+    animation: somemano 2s forwards;
+    animation-delay: 12s;
+  }
+
+  .home-info {
+    padding-left: 3%;
   }
 }
