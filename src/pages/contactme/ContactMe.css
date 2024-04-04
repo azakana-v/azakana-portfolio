@@ -1,0 +1,113 @@
+#contactme-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 60%;
+  border: 5px solid var(--primary-red);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  width: 100%;
+  /* margin: 1%; */
+  align-items: center;
+}
+
+input,
+textarea {
+  margin: 10px;
+  width: 95%;
+  height: 56px;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+textarea {
+  height: auto;
+}
+
+#or-component {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--primary-red);
+}
+
+.email-container {
+  margin-top: 1%;
+}
+
+.email-container,
+.whats-container {
+  display: flex;
+  align-items: center;
+}
+
+.whats-container div i,
+.email-container div i {
+  /* color: var(--bg-color); */
+  /* Comente a linha de cima para ver o que é melhor */
+}
+
+.whats-container div i {
+  font-size: 46px;
+  background-color: var(--primary-red);
+  border-radius: 15px;
+  padding: 5px;
+}
+.email-container div i {
+  font-size: 46px;
+  background-color: var(--primary-red);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#email-adress,
+#whats-adress {
+  color: var(--bg-color);
+  background-color: var(--primary-red);
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#or-component {
+  margin: 2%;
+  transform: rotate(5deg);
+}
+
+.input,
+.textarea {
+  color: white;
+}
+
+.input.clicked,
+.textarea.clicked {
+  background-color: #5c0000; /* Cor que deseja quando o input é clicado */
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #whats-adress,
+  #email-adress {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,187 @@
+#triangle-frmed {
+  animation: rotation 20s linear infinite;
+  animation-delay: 7s;
+  transform-box: fill-box;
+  /* transform-origin: 206px 186px; */
+}
+#fundobranco {
+  display: none;
+}
+
+#flecha1 {
+  /* display: none; */
+  stroke-dasharray: 495;
+  stroke-dashoffset: 495;
+  animation: arrows 8s ease infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 9s;
+}
+
+#flecha2 {
+  /* display: none; */
+  stroke-dasharray: 495;
+  stroke-dashoffset: 495;
+  animation: arrows 8s ease infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+#flecha3 {
+  /* display: none; */
+  stroke-dasharray: 495;
+  stroke-dashoffset: 495;
+  animation: arrows 8s ease infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+
+.bolas {
+  animation: balls 0.5s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  visibility: hidden;
+}
+
+#linha1 {
+  stroke-dasharray: 2188;
+  stroke-dashoffset: 2188;
+  animation: signLine1 4s ease;
+  animation-fill-mode: forwards;
+}
+
+#linha2 {
+  stroke-dasharray: 2627;
+  stroke-dashoffset: 2627;
+  animation: signLine2 4s ease;
+  animation-fill-mode: forwards;
+}
+
+#linha3 {
+  stroke-dasharray: 1962;
+  stroke-dashoffset: 1962;
+  animation: signLine3 4s ease;
+  animation-fill-mode: forwards;
+}
+
+#veia1 {
+  stroke-dasharray: 660;
+  stroke-dashoffset: 660;
+  animation: signVein1 8s ease infinite;
+  animation-delay: 7s;
+}
+
+#veia2 {
+  stroke-dasharray: 692;
+  stroke-dashoffset: 692;
+  animation: signVein2 8s ease infinite;
+  animation-delay: 8s;
+}
+
+#veia3 {
+  stroke-dasharray: 585;
+  stroke-dashoffset: 585;
+  animation: signVein3 8s ease infinite;
+  animation-delay: 6s;
+}
+
+@keyframes signLine1 {
+  100% {
+    stroke-dashoffset: -2188;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes signLine2 {
+  100% {
+    stroke-dashoffset: -2627;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes signLine3 {
+  100% {
+    stroke-dashoffset: -1962;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes signVein1 {
+  100% {
+    stroke-dashoffset: -660;
+  }
+  66% {
+    stroke-dashoffset: -660;
+  }
+  33% {
+    stroke-dashoffset: 0;
+  }
+  0% {
+    stroke-dashoffset: -660;
+  }
+}
+
+@keyframes signVein2 {
+  100% {
+    stroke-dashoffset: -692;
+  }
+  66% {
+    stroke-dashoffset: -692;
+  }
+  33% {
+    stroke-dashoffset: 0;
+  }
+  0% {
+    stroke-dashoffset: -692;
+  }
+}
+
+@keyframes signVein3 {
+  100% {
+    stroke-dashoffset: -585;
+  }
+  66% {
+    stroke-dashoffset: -585;
+  }
+  33% {
+    stroke-dashoffset: 0;
+  }
+  0% {
+    stroke-dashoffset: -585;
+  }
+}
+
+@keyframes arrows {
+  100% {
+    stroke-dashoffset: 495;
+  }
+  33%,
+  66% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes balls {
+  0% {
+    visibility: visible;
+    r: 0;
+  }
+  100% {
+    r: 4.5;
+    visibility: visible;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

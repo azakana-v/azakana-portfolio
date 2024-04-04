@@ -1,0 +1,74 @@
+.card-container {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  position: 1;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 20px solid rgb(133, 0, 0);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.background-card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 4px dashed rgb(249, 0, 0);
+  z-index: 1;
+}
+
+.balls {
+  position: relative;
+  z-index: 1;
+}
+.ball-container {
+  position: relative;
+  border: 1px solid purple;
+  width: 0%;
+  height: 0%;
+  z-index: 1;
+  right: 100px;
+  top: 320px;
+}
+
+.flash-container {
+  position: relative;
+  width: 0;
+  height: 0;
+  bottom: 170px;
+  right: 140px;
+  z-index: -1;
+}
+
+.flash {
+  width: 200px;
+}
+
+#project-github {
+  text-decoration: none;
+  color: white;
+  font-size: 65px;
+  position: relative;
+  bottom: 85px;
+  left: 15px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    width: 80%;
+    height: 300px;
+  }
+  .background {
+    border: 10px solid rgb(133, 0, 0);
+  }
+  .ball-container {
+    right: 60px;
+    top: 360px;
+  }
+}

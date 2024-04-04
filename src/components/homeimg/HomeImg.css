@@ -1,0 +1,139 @@
+:root {
+  --move-distance1: 0px;
+  --move-distance2: 0px;
+}
+
+.perfilimg-container {
+  width: 770px;
+  height: 770px;
+}
+
+.perfilimg-container img {
+  width: 770px;
+  position: absolute;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 2.5s ease-in-out infinite alternate-reverse both;
+  animation: slide-top 2.5s ease-in-out infinite alternate-reverse both;
+}
+
+.slide-top2 {
+  -webkit-animation: slide-top 4s ease-in-out infinite alternate-reverse both;
+  animation: slide-top 4s ease-in-out infinite alternate-reverse both;
+}
+
+.testeee {
+  position: absolute;
+}
+
+.spinner {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  left: 140px;
+  border-radius: 50%;
+  border: 8px solid var(--primary-red);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  animation: spin 2s linear infinite, changecolor 2s infinite;
+  transform: translate(20px, 20px) rotate(0);
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(var(--move-distance1));
+    transform: translateY(var(--move-distance1));
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(var(--move-distance1));
+    transform: translateY(var(--move-distance1));
+  }
+}
+
+@-webkit-keyframes slide-top2 {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(var(--move-distance1));
+    transform: translateY(var(--move-distance1));
+  }
+}
+@keyframes slide-top2 {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(var(--move-distance1));
+    transform: translateY(var(--move-distance1));
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(20px, 20px) rotate(360deg);
+  }
+}
+
+@keyframes changecolor {
+  0% {
+    border-color: var(--primary-red);
+  }
+  62% {
+    border-color: white;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .perfilimg-container {
+    width: 400px;
+    height: 322px;
+  }
+
+  .perfilimg-container img {
+    width: 400px;
+    position: absolute;
+  }
+  .spinner {
+    width: 240px;
+    height: 240px;
+    left: 60px;
+    bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .perfilimg-container {
+    width: 300px;
+    height: 242px;
+  }
+
+  .perfilimg-container img {
+    width: 300px;
+    position: absolute;
+  }
+  .spinner {
+    border: 4px solid var(--primary-red);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    width: 170px;
+    height: 170px;
+    left: 40px;
+    bottom: 20px;
+  }
+}

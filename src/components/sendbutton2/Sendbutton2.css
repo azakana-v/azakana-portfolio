@@ -1,0 +1,42 @@
+.sendform-button2-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  width: 0;
+  height: 0%;
+  top: 280px;
+  z-index: 2;
+}
+
+.sendform-button2-container:hover {
+}
+
+#sendform-button2 {
+  transition: 0.2s;
+  width: 70px;
+  position: absolute;
+  right: -40px;
+  top: -18px;
+}
+
+#sendform-button2:hover {
+  cursor: pointer;
+  scale: 1.06;
+}
+
+#sendbutton2-text {
+  position: absolute;
+  background-color: white;
+  color: var(--primary-red);
+  font-weight: 800;
+  font-size: 26px;
+  width: 245px;
+  height: 64px;
+  padding: 15px;
+  padding-left: 45px;
+  top: -17px;
+  left: 2px;
+  z-index: -1;
+  border-radius: 15px;
+}
