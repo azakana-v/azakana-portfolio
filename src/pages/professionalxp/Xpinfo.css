@@ -1,9 +1,8 @@
-h1 {
-  font-size: 25px;
+.xpcard-container h1 {
+  font-size: 20px;
 }
-
 .xpcard-container p {
   color: rgb(14, 14, 14);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 16px;
 }

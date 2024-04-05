@@ -38,53 +38,72 @@ export default function MyProjects() {
             pagination={{ clickable: true }}
           >
             <SwiperSlide>
-              <div className="slide-container">
-                <Cardcontainer
-                  backgroundimage={triviumgpt}
-                  gitlink="https://gptrivium.netlify.app"
-                  title="TriviumGPT!"
-                />
-                <div className="slidedesc">
-                  Sistema de Chatbot integrado com ChatGPT para auxiliar alunos
-                  no desenvolvimento de projetos STEM, realizado em 3 dias,
-                  conta com sistema de reconhecimento de fala, e responde apenas
-                  questões relacionadas ao tema.
+              <a
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://gptrivium.netlify.app"
+                target="_blank"
+              >
+                <div className="slide-container">
+                  <Cardcontainer
+                    backgroundimage={triviumgpt}
+                    gitlink="https://gptrivium.netlify.app"
+                    title="TriviumGPT!"
+                  />
+                  <div className="slidedesc">
+                    Sistema de Chatbot integrado com ChatGPT para auxiliar
+                    alunos no desenvolvimento de projetos STEM, realizado em 3
+                    dias, conta com sistema de reconhecimento de fala, e
+                    responde apenas questões relacionadas ao tema.
+                  </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="slide-container">
-                <Cardcontainer
-                  backgroundimage={lgpdImg}
-                  gitlink="https://lgpdlock.com.br"
-                  title="LGPD●LOCK!"
-                />
-                <div className="slidedesc">
-                  Projeto completo e comercial de adequação de empresas à LGPD,
-                  o software é capaz de gerar todos os documentos necessários
-                  para uma completa adequação da empresa, conta com back-end
-                  feito em firebase, front-end feito em React, sistema de login
-                  e autenticação e sistema de chat-bot.
+              <a
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://lgpdlock.com.br"
+                target="_blank"
+              >
+                <div className="slide-container">
+                  <Cardcontainer
+                    backgroundimage={lgpdImg}
+                    gitlink="https://lgpdlock.com.br"
+                    title="LGPD●LOCK!"
+                  />
+                  <div className="slidedesc">
+                    Projeto completo e comercial de adequação de empresas à
+                    LGPD, o software é capaz de gerar todos os documentos
+                    necessários para uma completa adequação da empresa, conta
+                    com back-end feito em firebase, front-end feito em React,
+                    sistema de login e autenticação e sistema de chat-bot.
+                  </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="slide-container">
-                <Cardcontainer
-                  backgroundimage={pokeapi}
-                  gitlink="https://pokedex-azakana.netlify.app"
-                  title="PokeApi!"
-                />
-                <div className="slidedesc">
-                  Projeto que simula uma "Pokedex", um catálogo virtual de
-                  monstrinhos do jogo "Pokémon", realizei esse projeto para
-                  testar minhas capacidades de desenvolvimento sem um Framework,
-                  completamente feito com Javascript vanilla. Conta com pesquisa
-                  de Pokèmon e mudança das fotos e nomes por meio de API.
+              <a
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://pokedex-azakana.netlify.app"
+                target="_blank"
+              >
+                <div className="slide-container">
+                  <Cardcontainer
+                    backgroundimage={pokeapi}
+                    gitlink="https://pokedex-azakana.netlify.app"
+                    title="PokeApi!"
+                  />
+                  <div className="slidedesc">
+                    Projeto que simula uma "Pokedex", um catálogo virtual de
+                    monstrinhos do jogo "Pokémon", realizei esse projeto para
+                    testar minhas capacidades de desenvolvimento sem um
+                    Framework, completamente feito com Javascript vanilla. Conta
+                    com pesquisa de Pokèmon e mudança das fotos e nomes por meio
+                    de API.
+                  </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           </Swiper>
         ) : (
