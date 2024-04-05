@@ -19,9 +19,7 @@ function Home() {
   }, []);
   return (
     <div>
-      <div className="TriangleContainer">
-        
-      </div>
+
       {isMobile ? (
         <section className="home">
           <div className="imghero-container">
