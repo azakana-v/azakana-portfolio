@@ -70,7 +70,7 @@
   height: 100%;
   background: var(--bg-color);
   animation: showRight 0.3s ease forwards;
-  animation-delay: 14s;
+  animation-delay: 1s;
 }
 
 .home-content h1::before {
@@ -82,7 +82,7 @@
   height: 100%;
   background: var(--bg-color);
   animation: showRight 0.3s ease forwards;
-  animation-delay: 14.5s;
+  animation-delay: 1.5s;
 }
 
 .home-content h3 {
@@ -101,7 +101,7 @@
   height: 100%;
   background: var(--bg-color);
   animation: showRight 0.3s ease forwards;
-  animation-delay: 14.8s;
+  animation-delay: 1.8s;
 }
 
 .home-content p {
@@ -119,7 +119,7 @@
   height: 100%;
   background: var(--bg-color);
   animation: showRight 0.3s ease forwards;
-  animation-delay: 15.1s;
+  animation-delay: 2.1s;
 }
 
 .home-content .btn-box {
@@ -139,7 +139,7 @@
   height: 100%;
   background: var(--bg-color);
   animation: showRight 0.3s ease forwards;
-  animation-delay: 15.4s;
+  animation-delay: 2.4s;
   z-index: 2;
 }
 
@@ -199,7 +199,7 @@
 
 .home-sci {
   position: absolute;
-  bottom: 40px;
+  bottom: -20px;
   width: 170px;
   display: flex;
 }

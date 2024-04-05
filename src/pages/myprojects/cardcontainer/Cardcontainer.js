@@ -9,7 +9,7 @@ export default function Cardcontainer(props) {
         title={props.title}
         position={
           window.innerWidth < 720
-            ? ["-50px", "auto", "auto", "80px"]
+            ? ["-50px", "auto", "auto", "auto"]
             : ["auto", "auto", "auto", "auto"]
         }
       />

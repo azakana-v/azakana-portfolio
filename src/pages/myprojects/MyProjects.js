@@ -31,7 +31,7 @@ export default function MyProjects() {
       <div className="swiper-container">
         {isMobile ? (
           <Swiper
-            style={{ padding: "130px 0 40px 0" }}
+            style={{ padding: "100px 0 30px 0" }}
             modules={[Navigation, Pagination]}
             // navigation
             loop={true}

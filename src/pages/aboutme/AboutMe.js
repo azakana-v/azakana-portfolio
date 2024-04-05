@@ -15,7 +15,7 @@ function AboutMe() {
         alt=""
       />
       <h2 id="subtitle">Font-End Developer e Professor STEM!</h2>
-      <p style={isExtended ? { maxHeight: "100%" } : null} id="text">
+      <p style={isExtended ? { maxHeight: "110%" } : null} id="text">
         Sempre fui apaixonado por tecnologia, quando era criança abria
         computadores e brinquedos tentando entender como tudo aquilo funcionava
         por dentro. Meu primeiro contato com programação foi desenvolvendo um
